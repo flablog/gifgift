@@ -1,0 +1,63 @@
+#calendrier{
+    border:0px solid black;;
+    border-spacing:8px;
+    margin-left:auto; 
+    margin-right:auto;
+    padding-top:160px;
+}
+
+#calendrier td{
+    border:0px solid black;
+    width:150px;
+    height:108px;
+    background-color: rgba(230, 230, 230, 0.62);
+    
+    font-family:Helvetica, Arial, sans-serif;
+    text-align:center;
+    color:#e9502f;
+    padding:0px;
+}
+
+
+.christmasCell{
+    height:220px;
+    min-height:220px;
+    
+}
+
+#exterior{
+    width:1024px;
+    min-width:1024px;
+    background:#bbb;
+    
+    background-image: url(/static/img/bkg-grid.jpg);
+}
+
+.date{
+    width:100%;
+    height:100%;
+   
+}
+
+.dateText{
+
+    text-align : center;
+    
+}
+
+.noBorder{
+
+}
+
+
+
+.activeDate:hover{
+    text-decoration:underline;
+    cursor:pointer;
+    background-color: rgba(100, 100, 100, 0.05);
+}
+
+.hiddenElement{
+    display: none;
+    visibility: hidden;
+}
