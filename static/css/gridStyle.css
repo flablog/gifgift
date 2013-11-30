@@ -4,7 +4,18 @@ body {
  font-family:Helvetica, Arial, sans-serif;
     text-align:center;
     color:#e9502f;
+     
  } 
+ 
+
+ #exterior{
+    width:1024px;
+    min-width:1024px;
+    background:#bbb;
+    margin-left: auto; margin-right: auto;
+    margin:0 auto;
+    background-image: url(../img/bkg-grid.jpg);
+}
 
 a {
     color:#e9502f;
@@ -12,6 +23,7 @@ a {
 
 
 #calendrier{
+    
     border:0px solid black;;
     border-spacing:8px;
     margin-left:auto; 
@@ -38,14 +50,7 @@ a {
     
 }
 
-#exterior{
-    width:1024px;
-    min-width:1024px;
-    background:#bbb;
-    margin-left: auto; margin-right: auto;
-    
-    background-image: url(../img/bkg-grid.jpg);
-}
+
 
 .date{
     width:100%;
