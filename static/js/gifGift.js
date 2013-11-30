@@ -10,10 +10,17 @@ $(document).ready(function(){
     		  $("#img_" + id).removeClass( "hiddenElement" );
     		  $("#text_" + id).addClass( "hiddenElement" );
     		  $(this).attr("visibleElement", "image");
+    		  
+    		  var ajaxUrl = "./setCookie/" + id + "/yes";
+    		  
+    		  $.get( ajaxUrl);
     		}else{
     		  $("#img_" + id).addClass( "hiddenElement" );
     		  $("#text_" + id).removeClass( "hiddenElement" );
     		  $(this).attr("visibleElement", "date");
+    		  var ajaxUrl = "./setCookie/" + id + "/no";
+    		  
+    		  $.get( ajaxUrl);
     		}
         }
     });	

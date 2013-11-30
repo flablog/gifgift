@@ -50,16 +50,16 @@
         {% for j in range (0,6) %}
             {% set counter += 1 %}
             
-            <td class="calendarCell {% if days[counter-1][3] %} activeCell{% end %}" id="cal_{{ counter }}" visibleElement="date" alt="TOTO" >
+            <td class="calendarCell {% if days[counter-1][3] %} activeCell{% end %}" id="cal_{{ days[counter-1][4] }}" visibleElement={% if days[counter-1][5] %}"image"{% else %}"date"{% end %}>
                 
                 <div class="date {% if days[counter-1][3] %} activeDate{% end %}">
                    
                     {% if days[counter-1][3] %}
-                        <div class="dateImage hiddenElement" id="img_{{ counter }}" style="width:100%; height:100%; background-image:url(./static/img/{{ days[counter-1][0] }})">
+                        <div class="dateImage {% if not days[counter-1][5] %}hiddenElement{% end %}" id="img_{{ days[counter-1][4] }}" style="width:100%; height:100%; background-image:url(./static/img/{{ days[counter-1][0] }})">
                         </div>
                     {% end %}
                     
-                    <div class="dateText"  id="text_{{ counter }}">
+                    <div class="dateText {% if days[counter-1][5] %}hiddenElement{% end %}"  id="text_{{ days[counter-1][4] }}">
                         <div class="dateTextElement">
                         {{  days[counter-1][4] }}
                         </div>
