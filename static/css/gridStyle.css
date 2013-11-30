@@ -44,12 +44,6 @@ a {
 }
 
 
-.christmasCell{
-    height:220px;
-    min-height:220px;
-    
-}
-
 
 
 .date{
@@ -64,9 +58,16 @@ a {
     
 }
 
+.christmasCell{
+    height:427px;
+    min-height:427px;
+    
+}
+
+
 .christmasCellContent{
     position:relative;
-    top:100px;
+    top:200px;
 }
 
 #facebookLink{

@@ -27,7 +27,7 @@ $(document).ready(function(){
     
     
      /* fix big screens */
-    if ($( window ).height() > 880){
+    if ($( window ).height() > 1102){
         $("#outPopUpDiv").addClass("outPopUp");
     }
     
