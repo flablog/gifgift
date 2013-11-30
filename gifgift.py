@@ -29,7 +29,7 @@ else:
 
 class UpdateCookieHandler(tornado.web.RequestHandler):
     def get(self, day, state):
-        print day, ':', state
+        if debug: print day, ':', state
         cookieData = self.get_cookie("caravel_calendar", default=None)
         cookie = None
         if cookieData:
