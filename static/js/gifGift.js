@@ -5,7 +5,7 @@ $(document).ready(function(){
         if ($(this).hasClass('activeCell')){
     		var thisElem = $(this).attr("id").split('_');
     		id = thisElem[1];
-    		
+    		//alert(id);
     		if ($(this).attr("visibleElement") == "date"){
     		  $("#img_" + id).removeClass( "hiddenElement" );
     		  $("#text_" + id).addClass( "hiddenElement" );
@@ -27,7 +27,7 @@ $(document).ready(function(){
     
     
      /* fix big screens */
-    if ($( window ).height() > 1102){
+    if ($( window ).height() > 880){ //1102
         $("#outPopUpDiv").addClass("outPopUp");
     }
     

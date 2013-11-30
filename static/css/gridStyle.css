@@ -59,15 +59,15 @@ a {
 }
 
 .christmasCell{
-    height:427px;
-    min-height:427px;
+    height:200px; //427
+    min-height:200px;
     
 }
 
 
 .christmasCellContent{
     position:relative;
-    top:200px;
+    top:100px;
 }
 
 #facebookLink{
