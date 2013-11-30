@@ -6,6 +6,7 @@ import os
 import sys
 import datetime
 import json
+import socket
 
 #date_object = datetime.strptime('2013-11-30 17:00', '%Y-%M-%D')
 
@@ -15,6 +16,13 @@ sys.path.append('.')
 
 debug = True
 port = 1984
+
+analytics = False
+if not "MacBook" in socket.gethostname() :
+    analytics = True
+    print "using analytics"
+else:
+    print "not using analytics"
 
 
 class UpdateCookieHandler(tornado.web.RequestHandler):
@@ -109,7 +117,7 @@ class MainHandler(tornado.web.RequestHandler):
             if datetime.datetime.strptime(days[i][1], '%Y-%m-%d %H:%M') <= now:
                 days[i][3] = True
                 
-        self.render('gifgift.html', days=days)
+        self.render('gifgift.html', days=days, analytics=analytics)
 
     
 class Application(tornado.web.Application):
