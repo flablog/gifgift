@@ -14,15 +14,17 @@ import socket
 sys.path.append('.')
 
 
-debug = True
+
 port = 1984
 
 analytics = False
 if not "MacBook" in socket.gethostname() :
     analytics = True
     print "using analytics"
+    debug = False
 else:
     print "not using analytics"
+    debug = True
 
 
 class UpdateCookieHandler(tornado.web.RequestHandler):
