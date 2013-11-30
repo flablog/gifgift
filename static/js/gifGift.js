@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    
+   
     $(".calendarCell").click(function(){
         if ($(this).hasClass('activeCell')){
     		var thisElem = $(this).attr("id").split('_');
@@ -17,6 +17,24 @@ $(document).ready(function(){
     		}
         }
     });	
+    
+    
+     /* fix big screens */
+    if ($( window ).height() > 880){
+        $("#outPopUpDiv").addClass("outPopUp");
+    }
+    
+    $( window ).resize(function() {
+        
+        if ($( window ).height() > 880){
+
+            if (!$("#outPopUpDiv").hasClass('outPopUp')){
+                $("#outPopUpDiv").addClass('outPopUp');
+            }
+        }else{
+            $("#outPopUpDiv").removeClass('outPopUp');
+        }
+    });
 
     
 });
