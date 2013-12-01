@@ -73,19 +73,19 @@ class MainHandler(tornado.web.RequestHandler):
                 ['Geoffroi_01.gif','2013-12-01 00:00', 'joseph', False, 1, False],
                 ['gif-cadeau150x108.gif','2013-12-20 00:00', 'joseph', False, 20, False],
                 ['GIF4.gif','2013-12-08 00:00', 'joseph', False, 8, False],
-                ['GIF_iran.gif','2013-12-23 00:00', 'joseph', False, 23, False],
+                ['GIF_iran_002.gif','2013-12-23 00:00', 'joseph', False, 23, False],
                 
                 ['gif-festin-anim-B-150x108.gif','2013-12-21 21:00', 'joseph', False, 21, False],
                 ['9_max_tapis.gif','2013-12-02 00:00', 'joseph', False, 2, False],
                 ['Xmas_triangle.gif','2013-12-12 00:00', 'joseph', False, 12, False],
                 ['GIF3.gif','2013-12-17 00:00', 'joseph', False, 17, False],
                 ['Geoffroi_03.gif','2013-12-13 00:00', 'joseph', False, 13, False],
-                ['GIF-nigeria.gif','2013-12-07 00:00', 'joseph', False, 7, False],
+                ['gif_foot-prints-snow-blue-reparation150x108.gif','2013-12-07 00:00', 'joseph', False, 7, False],
                 
                 ['Geoffroi_02.gif','2013-12-16 00:00', 'joseph', False, 16, False],
                 ['GIF2.gif','2013-12-18 00:00', 'joseph', False, 18, False],
                 ['23_max_sapin.gif','2013-12-09 00:00', 'joseph', False, 9, False],
-                ['gif_foot-prints-snow-blue-reparation150x108.gif','2013-12-05 00:00', 'joseph', False, 5, False],
+                ['GIF_nigeria_002.gif','2013-12-05 00:00', 'joseph', False, 5, False],
                 ['present.gif','2013-12-19 10:00', 'joseph', False, 19, False],
                 ['GIF_groenland.gif','2013-12-11 00:00', 'joseph', False, 11, False],
                 
@@ -120,7 +120,7 @@ class MainHandler(tornado.web.RequestHandler):
         for i in range (0,len(days)):
             if datetime.datetime.strptime(days[i][1], '%Y-%m-%d %H:%M') <= now:
                 days[i][3] = True
-            if False:
+            if True:
                 days[i][3] = True
                 
                 
