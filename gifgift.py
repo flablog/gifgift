@@ -120,7 +120,7 @@ class MainHandler(tornado.web.RequestHandler):
         for i in range (0,len(days)):
             if datetime.datetime.strptime(days[i][1], '%Y-%m-%d %H:%M') <= now:
                 days[i][3] = True
-            if True:
+            if False:
                 days[i][3] = True
                 
                 
