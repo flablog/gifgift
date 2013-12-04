@@ -63,7 +63,7 @@ class MainHandler(tornado.web.RequestHandler):
         days = [ # ['gifName', 'YYYY-MM-DD HH:MM' Starting point hour', 'author', active, date, state] 
                 ['GIF1.gif','2013-12-10 00:00', 'joseph', False, 10, False],
                 ['Geoffroi_04.gif','2013-12-15 00:00', 'joseph', False, 15, False],
-                ['GIF_france.gif','2013-12-24 00:00', 'maxime', False, 24, False],
+                ['Geoffroi_03.gif','2013-12-24 00:00', 'maxime', False, 24, False],
                 ['3_max_trap.gif','2013-12-03 00:00', 'geoffroi', False,3, False],
                 ['gif-playa150x108.gif','2013-12-22 00:00', 'maxime', False, 22, False],
                 ['Xmas_tree_watercolor.gif','2013-12-14 00:00', 'peter', False, 14, False],
@@ -79,7 +79,7 @@ class MainHandler(tornado.web.RequestHandler):
                 ['9_max_tapis.gif','2013-12-02 00:00', 'joseph', False, 2, False],
                 ['Xmas_triangle.gif','2013-12-12 00:00', 'joseph', False, 12, False],
                 ['GIF3.gif','2013-12-17 00:00', 'joseph', False, 17, False],
-                ['Geoffroi_03.gif','2013-12-13 00:00', 'joseph', False, 13, False],
+                ['GIF_france.gif','2013-12-13 00:00', 'joseph', False, 13, False],
                 ['gif_foot-prints-snow-blue-reparation150x108.gif','2013-12-07 00:00', 'joseph', False, 7, False],
                 
                 ['Geoffroi_02.gif','2013-12-16 00:00', 'joseph', False, 16, False],
@@ -120,7 +120,7 @@ class MainHandler(tornado.web.RequestHandler):
         for i in range (0,len(days)):
             if datetime.datetime.strptime(days[i][1], '%Y-%m-%d %H:%M') <= now:
                 days[i][3] = True
-            if False:
+            if None:
                 days[i][3] = True
                 
                 
