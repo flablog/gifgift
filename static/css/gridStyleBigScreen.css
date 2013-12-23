@@ -1,10 +1,10 @@
 .outPopUp{
         position:absolute;
         width:1024px; 
-        height:880px; //1103 
+        height:1001px; //1103 // avant 880
         z-index:15;
         top:50%;
         left:50%;
-        margin:-440px 0 0 -512px; //-552px 0 0 -512px;
+        margin:-500px 0 0 -512px; //-552px 0 0 -512px;// avant -440px 0 0 -512px;
         
    }

@@ -27,13 +27,13 @@ $(document).ready(function(){
     
     
      /* fix big screens */
-    if ($( window ).height() > 880){ //1102
+    if ($( window ).height() > 1001){ //1102 // avant 880
         $("#outPopUpDiv").addClass("outPopUp");
     }
     
     $( window ).resize(function() {
         
-        if ($( window ).height() > 880){
+        if ($( window ).height() > 1001){
 
             if (!$("#outPopUpDiv").hasClass('outPopUp')){
                 $("#outPopUpDiv").addClass('outPopUp');

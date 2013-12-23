@@ -89,7 +89,7 @@ class MainHandler(tornado.web.RequestHandler):
                 ['present.gif','2013-12-19 10:00', 'joseph', False, 19, False],
                 ['GIF_groenland.gif','2013-12-11 00:00', 'joseph', False, 11, False],
                 
-                ['gifgift25th_v001.gif','2013-12-25 11:00', 'joseph', False, 25, False],
+                ['gifgift25th_v002.gif','2013-12-25 00:00', 'joseph', False, 25, False],
                 
             
             

@@ -8,13 +8,17 @@ body {
  } 
  
 
+ 
+
  #exterior{
     width:1024px;
     min-width:1024px;
     background:#bbb;
     margin-left: auto; margin-right: auto;
     margin:0 auto;
-    background-image: url(../img/bkg-grid.jpg);
+    //background-image: url(../img/bkg-grid.jpg);
+    background-image: url(../img/bkg-grid_V02.jpg);
+    
 }
 
 a {
@@ -58,17 +62,30 @@ a {
     
 }
 
+.date25{
+    position:relative;
+    top:130px;
+}
+
+.date25activ{
+    position:relative;
+    top:120px;
+    font-size:2em;
+}
+
 .christmasCell{
-    height:200px; //427
-    min-height:200px;
-    
+    //height:200px; //427
+    //min-height:200px;
+    height:344px;
+    min-height:344px;
 }
 
 
 .christmasCellContent{
-    position:relative;
-    top:100px;
-}
+    //position:relative;
+    //top:100px;
+    }
+
 
 #facebookLink{
     width:100%;
@@ -86,3 +103,6 @@ a {
     display: none;
     visibility: hidden;
 }
+
+
+
