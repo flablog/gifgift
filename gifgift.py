@@ -123,9 +123,9 @@ class MainHandler(tornado.web.RequestHandler):
             if None:
                 days[i][3] = True
                 
-                
+        past25 = True if datetime.datetime.strptime("2013-12-25 00:00", '%Y-%m-%d %H:%M') <= now else False
             
-        self.render('gifgift.html', days=days, analytics=analytics)
+        self.render('gifgift.html', days=days, analytics=analytics, past25=past25)
 
     
 class Application(tornado.web.Application):
